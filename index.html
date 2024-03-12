@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>decodificador</title>
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="assets/logo_alura.svg" alt="Logo Alura">
+    </header>
+
+    <main id="principal">
+        <section class="textoBotoes">
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto aqui"></textarea>
+
+            <div id="conjunto-botoes">
+                <div class="informacao"> 
+                    <img id="imagem" src="assets/icone_ponto_exclamacao.svg">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div>
+                    <button  class="botoes" id="botao1" onclick="botaoEncriptar()" class="btn-criptografar">Criptografar</button>
+                    <button  class="botoes" id="botao2" onclick="botaoDesencriptar()" class="btn-desencriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="divSomeAparece">
+            <div id="some" style="display: block;">
+                <img src="assets/Personagem.svg">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div id="aparece" style="display: none;">
+                <textarea id="mensagem" cols="20" rows="10"></textarea>
+                <button onclick="botaocopiar()" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>Rafael Marques</a></footer>
+</body>
+<script src="app.js"></script>
+</html>
